@@ -1,22 +1,3 @@
-# Express 4 使用教學範例
-
-###  開啟一個web服務
-```javascript
-var app = require('express')();
-app.get("/", function(req, res) {
-    res.send("Hello World!!");
-})
-app.listen(8000, function() {
-    console.log("web start in 8000 port");
-});
-```
-請見 app_1.js
-
-### 接收一個 Post form
-要解析 Post form 必須先安裝 body-parser 掛件<br>
-加入```app.use(bodyParser.urlencoded({ extended: true }));```<br>
-request 可以幫你做個簡單 get 或 post
-```javascript
 var app = require('express')();
 var bodyParser = require('body-parser');
 var request = require('request');
@@ -38,5 +19,3 @@ app.listen(8000, function() {
         }
     });
 });
-```
-請見 app_2.js

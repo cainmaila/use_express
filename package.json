@@ -1,0 +1,24 @@
+{
+  "name": "use_express",
+  "version": "1.0.0",
+  "description": "```javascript\r var app = require('express')();\r app.get(\"/\", function(req, res) {\r     res.send(\"Hello World!!\");\r })\r app.listen(8000, function() {\r     console.log(\"web start in 8000 port\");\r });\r ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cainmaila/use_express.git"
+  },
+  "author": "cain.chu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cainmaila/use_express/issues"
+  },
+  "homepage": "https://github.com/cainmaila/use_express#readme",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.3",
+    "request": "^2.67.0"
+  }
+}
